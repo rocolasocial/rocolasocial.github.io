@@ -1,0 +1,242 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Reset ends */
+
+/* @license
+ * MyFonts Webfont Build ID 2117925, 2012-03-01T01:53:31-0500
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: Decima Mono Light by TipografiaRamis
+ * URL: http://www.myfonts.com/fonts/tipografiaramis/decima-mono/light/
+ * Copyright: Copyright (c) 2008 by TipografiaRamis. All rights reserved.
+ * Licensed pageviews: 10,000
+ *
+ *
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2117925
+ *
+ * © 2012 Bitstream Inc
+*/
+
+body {
+	font-family: 'Fira Mono', sans-serif;
+	/*font-family: 'Fira Sans', sans-serif; */
+	font-size: 1em;
+	line-height: 1.3em;
+	color: #6e6e6e;
+	background-color: white;
+	}
+.container {
+	width: 80%;
+	margin: 0 auto;
+	padding: 5% 0;
+	overflow: hidden;
+}
+div, li {box-sizing: border-box;}
+
+
+a, .orange {
+	color: #f15a24;
+	text-decoration: none;
+	font-weight: bold;
+	}
+	a:hover {text-decoration: underline;}
+p { padding-bottom: 1.3em;}
+strong {font-weight: bold;}
+
+/*
+Type
+*/
+
+h1 {font-size: 3.5em; line-height: 1.3em;}
+h2 {font-size: 2.625em; line-height: 1.3em;}
+h3 {font-size: 2.25em; line-height: 1.3em}
+h4, blockquote {font-size: 1.5em; line-height: 1.3em}
+h1, h2, h3 { margin-bottom: 1.2em;}
+
+
+/*
+Grids
+*/
+
+.two-cols > div,
+.two-cols > li {width: 50%;}
+.three-cols > div,
+.three-cols > li {width: 33%;}
+.four-cols > div,
+.four-cols > li {width: 25%;}
+
+.grid-five-to-six div:first-child {width: 40%;}
+.grid-five-to-six div:last-child {width: 60%;}
+
+.two-cols,
+.three-cols,
+.four-cols,
+.grid-five-to-six {overflow: hidden;}
+
+.two-cols > div, .two-cols > li,
+.three-cols > div, .three-cols > li,
+.four-cols > div, .four-cols > li,
+.grid-five-to-six > div, .grid-five-to-six > li {float: left; padding: 0 1em;}
+
+.two-cols img,
+.three-cols img,
+.four-cols img,
+.grid-five-to-six img { width: 100%;}
+
+/*
+Sections
+*/
+img.logo {max-width: 20%; margin-bottom: 4em;}
+section {border-bottom: 1px solid #eeeeee;}
+
+section#intro {position: relative;}
+section#intro {
+	/*background-color: #f15a24;*/
+	color: white;
+	background-image: url('imgs/back-map.jpg');
+	background-size: cover;
+}
+section#intro .cover-img {position: absolute; bottom: 0px; width: 40%;}
+
+#team ul li img {width: 70%; padding-bottom: 1em;}
+#team ul li.quote {width: 50%;}
+
+/*#screens ul li {
+	background-image: url('imgs/slider-phone.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}*/
+
+#screens ul li img {
+	margin-bottom: 1em;
+	border: 1px solid #6e6e6e;
+}
+
+footer { background-color: #f15a24; color: white;}
+footer .container div:nth-child(1) {width: 20%;}
+footer .container div:nth-child(2) {width: 30%;}
+footer .container div:nth-child(3) {width: 50%;}
+footer .container > div {float: left;}
+footer img.logo {max-width: 50%;}
+
+input {
+	width: 85%;
+	font-size: 1.5em;
+	padding: 2% 5%;
+	border: 5px solid white;
+	outline: none;
+	background-color: #f15a24;
+	font-family: 'Fira Mono', sans-serif;
+	color: white;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	}
+footer input {width: initial;}
+input [type=submit],
+.submit {
+	width: 40% !important;
+	background-color: #f91d23;
+	color: white;
+	cursor: pointer;
+	float: left;
+	margin-right: 1em;
+}
+::-webkit-input-placeholder {color: white;}
+:-moz-placeholder { /* Firefox 18- */color: white;}
+::-moz-placeholder {  /* Firefox 19+ */color: white;}
+:-ms-input-placeholder {color: white;}
+label {width: 40: float: left;}
+
+
+
+/* CSS Queries */
+
+
+@media screen and (min-width: 1400px) {
+	body {font-size: 18px;}
+	.container {width: 70%;}
+}
+
+@media screen and (max-width: 960px) {
+	body {font-size: 14px;}
+	.two-cols > div,
+	.two-cols > li {width: 100%;}
+	.grid-five-to-six div:first-child,
+	.grid-five-to-six div:last-child {width: 100%;}
+	h1 {font-size: 2em}
+	h2 {font-size: 1.625em}
+	h3 {font-size: 1.25em}
+	h4, blockquote {font-size: 1.2em}
+
+	#team ul li.quote {width: 50%;}
+	footer .container div:nth-child(1) {width: 30%;}
+	footer .container div:nth-child(2) {width: 70%;}
+	footer .container div:nth-child(3) {width: 70%;}
+	footer img.logo {width: 50%;}
+}
+
+@media screen and (max-width: 500px) {
+	body {font-size: 12px;}
+	.container {width: 95%;}
+	img.logo {margin-bottom: 2em;}
+
+	.three-cols > div,
+	.three-cols > li {width: 100%; margin-bottom: 1em;}
+	.four-cols > div,
+	.four-cols > li {width: 50%;}
+	#howitworks .three-cols img { width: 80%;}
+	#team ul li.quote {width: 100%; margin: 2em 0;}
+}
